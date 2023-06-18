@@ -5,7 +5,7 @@ const github_icon = new URL('../assets/Icons/github.png', import.meta.url).href;
 const new_tab_icon = new URL('../assets/Icons/tab.png', import.meta.url).href;
 
 const TMDB = new URL('../assets/TMDB.JPG', import.meta.url).href;
-const blog_site = new URL('../assets/BlogSiteJPG.JPG', import.meta.url).href;
+const url_shortener = new URL('../assets/urlShortener.JPG', import.meta.url).href;
 const to_do_list = new URL('../assets/to_do_list.JPG', import.meta.url).href;
 const aurotax = new URL('../assets/aurotax.JPG', import.meta.url).href;
 
@@ -39,23 +39,24 @@ export function Projects () {
                 </div>
 
                 <div className="project_container">
-                    <h3>BlogSite</h3>
+                    <h3>URL Shortener</h3>
                     
                     <div className="project_image_container">
-                        <img src={blog_site}/>
+                        <img src={url_shortener}/>
                     </div>
 
                     <div className="project_techs_container">
                         <span>React</span>
+                        <span>Node</span>
                         <span>TypeScript / JavaScript</span>
-                        <span>CSS</span>
+                        <span>Tailwind</span>
                     </div>
 
-                    <p>This static site is the result of Platzi's React-Router-Dom course, and me practing React context in general. The site allows you to create text blogs, and provides a pseudo auth, which was created for learning purposes.</p>
+                    <p>Project created solely for educational purposes, I tried to implement everything I learned on React and Node architecture in this full stack application. URL Shortener makes your URLs more concise and user-friendly. It's a simple and intuitive solution that allows you to enter a long URL and instantly generate a shorter, more manageable version.</p>
                     
                     <div className="project_links_container">
-                        <a href="https://github.com/santiagredo/BlogSite" target="_blank"><span><img alt="" src={github_icon}/></span></a>
-                        <a href="https://santiagredo.github.io/BlogSite/#/home" target="_blank"><span><img alt="" src={new_tab_icon}/></span></a>
+                        <a href="https://github.com/santiagredo/URLShortener" target="_blank"><span><img alt="" src={github_icon}/></span></a>
+                        <a href="https://us-rinp.onrender.com/" target="_blank"><span><img alt="" src={new_tab_icon}/></span></a>
                     </div>
                 </div>
 
