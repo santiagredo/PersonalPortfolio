@@ -1,16 +1,15 @@
-import React from 'react'
-import './App.css'
-import { Header } from './Header/Header';
-import { About_me } from './About_me/About_me';
-import { Projects } from './Projects/Projects';
-import { Footer } from './Footer/Footer';
+import React from 'react';
+import { Header } from './Components/Header';
+import { Main } from './Components/Main';
+import { Projects } from './Components/Projects';
+import { Footer } from './Components/Footer';
 
 function App() {
   
   return (
     <React.Fragment>
       <Header/>
-      <About_me/>
+      <Main/>
       <Projects/>
       <Footer/>
     </React.Fragment>
@@ -18,9 +17,3 @@ function App() {
 }
 
 export default App
-
-
-//  header -> about me - projects - contact
-//  about me
-//  projects
-//  footer -> contact
