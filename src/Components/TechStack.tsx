@@ -6,6 +6,7 @@ const javaScriptIcion = new URL("../assets/Icons/javascript.svg", import.meta.ur
 const typeScriptIcon = new URL("../assets/Icons/typescript.svg", import.meta.url).href;
 const reactIcon = new URL("../assets/Icons/react.svg", import.meta.url).href;
 const nodejsIcon = new URL("../assets/Icons/nodejs.svg", import.meta.url).href;
+const nestjsIcon = new URL("../assets/Icons/nestjs.svg", import.meta.url).href;
 const tailwindIcon = new URL("../assets/Icons/tailwind.svg", import.meta.url).href;
 const mongodbIcon = new URL("../assets/Icons/mongodb.svg", import.meta.url).href;
 
@@ -67,6 +68,13 @@ export function TechStack () {
                         <img alt="Nodejs icon" src={nodejsIcon} className={imgClasses}/>
                         <p className={PClasses}>
                             NodeJS
+                        </p>
+                    </figure>
+
+                    <figure className={figureClasses}>
+                        <img alt="Nestjs icon" src={nestjsIcon} className={imgClasses}/>
+                        <p className={PClasses}>
+                            NestJS
                         </p>
                     </figure>
                     

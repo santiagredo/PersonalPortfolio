@@ -10,6 +10,7 @@ export function Footer () {
 
     const footerClasses = "w-11/12 mx-auto";
     const H2Classes = "p-4 text-4xl font-bold text-center";
+    const pClasses = "text-center";
 
     const iconContainerClasses = "flex justify-around items-center py-4";
     const figureClasses = "w-12";
@@ -21,7 +22,7 @@ export function Footer () {
                     Contact
                 </h2>
 
-                <p>Thanks for checking out my portfolio! If you want to chat about a potential project, have any questions or just want to say hello, I'd love to hear from you. Feel free to contact me through email or LinkedIn. I'm really excited about the possibility of working together and can't wait to hear about what you have in mind.</p>
+                <p className={pClasses}>Thanks for checking out my portfolio! If you want to chat about a potential project, have any questions or just want to say hello, I'd love to hear from you. Feel free to contact me through email or LinkedIn. I'm really excited about the possibility of working together and can't wait to hear about what you have in mind.</p>
 
                 <div className={iconContainerClasses}>
                     <a href="mailto:santiagoagredo@live.com">

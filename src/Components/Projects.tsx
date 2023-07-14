@@ -5,7 +5,7 @@ const new_tab_icon = new URL('../assets/Icons/tab.png', import.meta.url).href;
 
 const TMDB = new URL('../assets/TMDB.JPG', import.meta.url).href;
 const url_shortener = new URL('../assets/urlShortener.JPG', import.meta.url).href;
-const to_do_list = new URL('../assets/to_do_list.JPG', import.meta.url).href;
+const riddlerChat = new URL("../assets/riddlerChat.JPG", import.meta.url).href;
 const aurotax = new URL('../assets/aurotax.JPG', import.meta.url).href;
 
 export function Projects () {
@@ -18,8 +18,8 @@ export function Projects () {
 
     const H3Classes = "py-4 text-3xl font-bold";
 
-    const figureClasses = "";
-    const imgClasses = "";
+    const figureClasses = "w-full h-full";
+    const imgClasses = "w-full h-full object-cover";
 
     const ulClasses = "flex flex-wrap";
     const liClasses = "mr-4 mt-1 px-2 bg-gray-700 rounded font-semibold";
@@ -39,7 +39,7 @@ export function Projects () {
                     <article className={articleClasses}>
                         <h3 className={H3Classes}>TMDB</h3>
                         
-                        <figure className="project_image_container">
+                        <figure className={figureClasses}>
                             <img src={TMDB}/>
                         </figure>
 
@@ -69,8 +69,8 @@ export function Projects () {
                     <article className={articleClasses}>
                         <h3 className={H3Classes}>URL Shortener</h3>
                         
-                        <figure className="project_image_container">
-                            <img src={url_shortener}/>
+                        <figure className={figureClasses}>
+                            <img src={url_shortener} className={imgClasses}/>
                         </figure>
 
                         <ul className={ulClasses}>
@@ -99,28 +99,30 @@ export function Projects () {
                     </article>
 
                     <article className={articleClasses}>
-                        <h3 className={H3Classes}>To Do list</h3>
+                        <h3 className={H3Classes}>The Riddler Chat</h3>
                         
-                        <figure className="project_image_container">
-                            <img src={to_do_list}/>
+                        <figure className={figureClasses}>
+                            <img src={riddlerChat}/>
                         </figure>
 
                         <ul className={ulClasses}>
-                            <li className={liClasses}>React</li>
                             <li className={liClasses}>TypeScript</li>
-                            <li className={liClasses}>CSS</li>
+                            <li className={liClasses}>React</li>
+                            <li className={liClasses}>Node</li>
+                            <li className={liClasses}>Nest</li>
+                            <li className={liClasses}>Tailwind</li>
                         </ul>
 
-                        <p>Application that manages To Dos. This project is the outcome of Platzi's Intro to React course, where the foundations for a React application are explained, then put into practice immediately.</p>
+                        <p>THERIDDLERCHAT is a chat application inspired by the interface used in the movie "The Batman (2022)" In the movie, the antagonist, The Riddler, communicates with Batman through a chat and provides him with clues about his next victim.</p>
                         
                         <div className={LinksContainerClasses}>
-                            <a href="https://github.com/santiagredo/ToDoList" target="_blank">
+                            <a href="https://github.com/santiagredo/THERIDDLERCHAT" target="_blank">
                                 <figure>
                                     <img alt="github icon" src={github_icon} className={linksImagesClasses}/>
                                 </figure>
                             </a>
 
-                            <a href="https://santiagredo.github.io/ToDoList/" target="_blank">
+                            <a href="https://riddlerchat.onrender.com/" target="_blank">
                                 <figure>
                                     <img alt="new tab icon" src={new_tab_icon} className={linksImagesClasses}/>
                                 </figure>
@@ -132,7 +134,7 @@ export function Projects () {
                     <article className={articleClasses}>
                         <h3 className={H3Classes}>Aurotax.com</h3>
                         
-                        <figure className="project_image_container">
+                        <figure className={figureClasses}>
                             <img src={aurotax}/>
                         </figure>
 
